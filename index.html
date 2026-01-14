@@ -1,56 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/helion-hover/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helion-Hover | Карьерный апгрейд и инновации</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/helion-hover/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/helion-hover/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/helion-hover/assets/styles-CNfUm-Nu.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__icon"></span>
+          <span class="logo__text">Helion-Hover</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav" id="nav-menu">
+          <ul class="nav__list">
+              <li><a href="#" class="nav__link">Главная</a></li>
+              <li><a href="#about" class="nav__link">Стратегии</a></li>
+              <li><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li><a href="#blog" class="nav__link">Блог</a></li>
+              <li><a href="#contact" class="nav__link">Контакты</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+          <button class="burger" id="burger-menu" aria-label="Меню">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+  <div class="container hero__container">
+      <div class="hero__content">
+          <span class="hero__subtitle" data-aos="fade-up">Технология нового поколения</span>
+          <h1 class="hero__title" id="hero-title">
+              Карьерный апгрейд на базе инноваций
+          </h1>
+          <p class="hero__description">
+              Постройте карьеру, которая работает на вас. Мы используем передовую цифровую инфраструктуру, чтобы вы могли оценить перспективы проекта и совершить прорыв.
+          </p>
+          <div class="hero__btns">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#about" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+      <div class="hero__visual">
+          <div class="hero__card">
+              <img src="/helion-hover/assets/one-DJl21B-o.jpg" alt="Innovation" class="hero__img">
+              <div class="hero__glass-label">Future of Work</div>
+          </div>
+          <div class="hero__circle"></div>
+      </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="container">
+      <div class="about__grid">
+          <div class="about__info">
+              <h2 class="section-title">Переосмыслите подход к развитию</h2>
+              <p class="section-text">
+                  Helion-Hover — это не просто блог, а инновационная цифровая инфраструктура для тех, кто готов к качественному скачку. Мы объединили глубокую аналитику рынка Англии и AI-инструменты для решения реальных задач.
+              </p>
+
+              <div class="about__features">
+                  <div class="feature-item">
+                      <div class="feature-item__icon">
+                          <i data-lucide="cpu"></i>
+                      </div>
+                      <div class="feature-item__text">
+                          <h4>AI-инструменты</h4>
+                          <p>Решения, которые меняют правила игры в поиске и росте.</p>
+                      </div>
+                  </div>
+                  <div class="feature-item">
+                      <div class="feature-item__icon">
+                          <i data-lucide="trending-up"></i>
+                      </div>
+                      <div class="feature-item__text">
+                          <h4>Стратегия роста</h4>
+                          <p>Методологии, доказавшие эффективность в странах ЕС.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="about__stats">
+              <div class="stat-card">
+                  <span class="stat-card__number">15+</span>
+                  <span class="stat-card__label">Лет экспертизы</span>
+              </div>
+              <div class="stat-card stat-card--accent">
+                  <span class="stat-card__number">500+</span>
+                  <span class="stat-card__label">Кейсов в UK</span>
+              </div>
+              <div class="stat-card">
+                  <span class="stat-card__number">24/7</span>
+                  <span class="stat-card__label">Поддержка</span>
+              </div>
+              <div class="stat-card">
+                  <span class="stat-card__number">100%</span>
+                  <span class="stat-card__label">Digital подход</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="benefits" id="benefits">
+  <div class="container">
+      <div class="benefits__header">
+          <h2 class="section-title">Стратегия роста на базе инноваций</h2>
+          <p class="section-text">Мы разработали инструменты, которые позволяют сократить путь к цели в 3 раза.</p>
+      </div>
+
+      <div class="benefits__grid">
+          <div class="benefit-card benefit-card--large">
+              <div class="benefit-card__content">
+                  <span class="benefit-card__tag">New</span>
+                  <h3 class="benefit-card__title">Программа пассивного дохода</h3>
+                  <p class="benefit-card__desc">Используйте наши технологии для создания стабильного финансового фундамента, пока вы развиваете основную карьеру.</p>
+                  <a href="#contact" class="btn-link">Узнать детали <i data-lucide="arrow-up-right"></i></a>
+              </div>
+              <div class="benefit-card__visual">
+                  <div class="benefit-card__glow"></div>
+              </div>
+          </div>
+
+          <div class="benefit-card benefit-card--medium">
+              <div class="benefit-card__icon"><i data-lucide="zap"></i></div>
+              <h3 class="benefit-card__title">Быстрый и лёгкий старт</h3>
+              <p class="benefit-card__desc">Легко разобраться без опыта. Подключение к платформе занимает всего 2 минуты.</p>
+          </div>
+
+          <div class="benefit-card benefit-card--small">
+              <div class="benefit-card__icon"><i data-lucide="shield-check"></i></div>
+              <h3 class="benefit-card__title">Проверенный партнер</h3>
+              <p class="benefit-card__desc">Методологии, доказавшие эффективность в Лондоне и по всей Европе.</p>
+          </div>
+
+          <div class="benefit-card benefit-card--medium-alt">
+              <div class="benefit-card__icon"><i data-lucide="layers"></i></div>
+              <h3 class="benefit-card__title">Практики сегодня</h3>
+              <p class="benefit-card__desc">Никакой «воды». Только практики, применимые в вашей работе уже сегодня.</p>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="innovations" id="innovations">
+  <div class="container">
+      <div class="innovations__wrapper">
+          <div class="innovations__content">
+              <span class="hero__subtitle">Digital Infrastructure</span>
+              <h2 class="section-title">Инновационная технология вашего успеха</h2>
+              <p class="section-text">
+                  Платформа уже доступна в Европе и Англии. Мы используем AI-инструменты для реальных задач, анализируя тысячи параметров рынка труда в режиме реального времени.
+              </p>
+              <ul class="innovations__list">
+                  <li class="innovation-item">
+                      <div class="innovation-item__num">01</div>
+                      <div class="innovation-item__body">
+                          <h4>AI-инструменты для реальных задач</h4>
+                          <p>Автоматизированный анализ вашего профиля на соответствие топовым позициям в UK.</p>
+                      </div>
+                  </li>
+                  <li class="innovation-item">
+                      <div class="innovation-item__num">02</div>
+                      <div class="innovation-item__body">
+                          <h4>Платформа года</h4>
+                          <p>Признанная экспертами архитектура данных для прогнозирования карьерных трендов.</p>
+                      </div>
+                  </li>
+                  <li class="innovation-item">
+                      <div class="innovation-item__num">03</div>
+                      <div class="innovation-item__body">
+                          <h4>Технологии нового поколения</h4>
+                          <p>Облачные решения, обеспечивающие мгновенный доступ к базе знаний и нетворкингу.</p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="innovations__image">
+              <div class="tech-stack">
+                  <div class="tech-stack__node tech-stack__node--main">
+                      <i data-lucide="database"></i>
+                      <span>Core AI</span>
+                  </div>
+                  <div class="tech-stack__node tech-stack__node--sub node-1">
+                      <i data-lucide="search"></i>
+                  </div>
+                  <div class="tech-stack__node tech-stack__node--sub node-2">
+                      <i data-lucide="bar-chart-3"></i>
+                  </div>
+                  <div class="tech-stack__node tech-stack__node--sub node-3">
+                      <i data-lucide="globe"></i>
+                  </div>
+                  </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="blog" id="blog">
+  <div class="container">
+      <div class="blog__header">
+          <div>
+              <span class="hero__subtitle">База знаний</span>
+              <h2 class="section-title">Практики, применимые уже сегодня</h2>
+          </div>
+          <a href="#contact" class="btn btn--outline">Все статьи</a>
+      </div>
+
+      <div class="blog__grid">
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="/helion-hover/assets/two-BlCoykXH.jpg" alt="UK Market">
+                  <span class="blog-card__tag">Рынок UK</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">14 Января, 2026</time>
+                  <h3 class="blog-card__title">Рынок труда Англии 2026: к чему готовиться экспертам?</h3>
+                  <p class="blog-card__excerpt">Разбираем ключевые тренды Лондона и Манчестера: какие навыки станут «золотым стандартом» в ближайшие 12 месяцев.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="chevron-right"></i></a>
+              </div>
+          </article>
+
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="/helion-hover/assets/three-CDc-_vnS.jpg" alt="AI in Recruitment">
+                  <span class="blog-card__tag">AI & Tech</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">10 Января, 2026</time>
+                  <h3 class="blog-card__title">AI-инструменты в рекрутинге: как обойти алгоритмы</h3>
+                  <p class="blog-card__excerpt">Как современные корпорации используют AI для отсева кандидатов и как адаптировать свое резюме под новые правила игры.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="chevron-right"></i></a>
+              </div>
+          </article>
+
+          <article class="blog-card">
+              <div class="blog-card__image">
+                  <img src="/helion-hover/assets/four-C2GQ2CX3.jpg" alt="Personal Brand">
+                  <span class="blog-card__tag">Карьера</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">05 Января, 2026</time>
+                  <h3 class="blog-card__title">Постройте карьеру, которая работает на вас</h3>
+                  <p class="blog-card__excerpt">Пошаговый путь создания личного бренда эксперта в цифровой среде без колоссальных затрат времени.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="chevron-right"></i></a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container">
+      <div class="contact__grid">
+          <div class="contact__info">
+              <span class="hero__subtitle">Обратная связь</span>
+              <h2 class="section-title">Бесплатная консультация по всем вопросам</h2>
+              <p class="section-text">
+                  Оставьте заявку, и наш эксперт свяжется с вами в течение 30 минут, чтобы обсудить вашу стратегию роста. Платформа уже доступна в Европе.
+              </p>
+
+              <div class="contact__details">
+                  <div class="contact-item">
+                      <div class="contact-item__icon"><i data-lucide="mail"></i></div>
+                      <div>
+                          <p class="contact-item__label">Пишите нам</p>
+                          <a href="mailto:hello@helion-hover.fit" class="contact-item__value">hello@helion-hover.fit</a>
+                      </div>
+                  </div>
+                  <div class="contact-item">
+                      <div class="contact-item__icon"><i data-lucide="phone"></i></div>
+                      <div>
+                          <p class="contact-item__label">Звоните</p>
+                          <a href="tel:+442079460958" class="contact-item__value">+44 20 7946 0958</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="contact__form-wrapper">
+              <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                      <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" name="email" id="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" name="phone" id="phone" placeholder="Телефон (только цифры)" required>
+                  </div>
+
+                  <div class="form-captcha">
+                      <p class="captcha-label">Решите пример: <span id="captcha-question">5 + 3 = ?</span></p>
+                      <input type="text" id="captcha-answer" placeholder="Ответ" required>
+                  </div>
+
+                  <div class="form-checkbox">
+                      <input type="checkbox" id="consent" required>
+                      <label for="consent">Согласен с политикой обработки персональных данных</label>
+                  </div>
+
+                  <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+
+                  <div id="form-success" class="form-message success-message" style="display: none;">
+                      <i data-lucide="check-circle"></i>
+                      <p>Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.</p>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__brand">
+              <a href="/" class="logo logo--footer">
+                  <span class="logo__icon"></span>
+                  <span class="logo__text">Helion-Hover</span>
+              </a>
+              <p class="footer__tagline">Технологии, которые работают на ваш карьерный рост.</p>
+              <div class="footer__contacts">
+                  <a href="tel:+442079460958" class="footer__contact-link">
+                      <i data-lucide="phone"></i> +44 20 7946 0958
+                  </a>
+                  <a href="mailto:hello@helion-hover.fit" class="footer__contact-link">
+                      <i data-lucide="mail"></i> hello@helion-hover.fit
+                  </a>
+                  <address class="footer__contact-link">
+                      <i data-lucide="map-pin"></i> Level 32, One Canada Square, Canary Wharf, London E14 5AB, UK
+                  </address>
+              </div>
+          </div>
+
+          <div class="footer__nav">
+              <h4 class="footer__title">Навигация</h4>
+              <ul class="footer__links">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#about">О нас</a></li>
+                  <li><a href="#innovations">Инновации</a></li>
+                  <li><a href="#blog">Блог</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__legal">
+              <h4 class="footer__title">Документы</h4>
+              <ul class="footer__links">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Data Policy</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2026 Helion-Hover. Все права защищены. Решения, которые меняют правила игры.</p>
+      </div>
   </div>
 </footer>
-
-
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button id="accept-cookies" class="btn btn--primary">Принять</button>
+      </div>
+  </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
   </body>
 </html>
