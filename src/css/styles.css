@@ -1049,7 +1049,7 @@ img {
 
 .pages h1 {
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 40px;
   color: var(--color-primary);
 }
